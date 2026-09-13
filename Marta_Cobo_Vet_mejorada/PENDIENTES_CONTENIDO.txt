@@ -1,0 +1,79 @@
+MARTA COBO VET — CONTENIDO PENDIENTE PARA PUBLICAR
+
+FOTOS PRIORITARIAS
+1. Hero horizontal de Marta con caballo de deporte (web portada).
+2. Marta explorando / ecografiando / radiografiando / tratando a un caballo.
+3. Foto clínica específica para Servicios.
+4. Marta realizando un examen precompra.
+5. Retrato editorial vertical de Marta.
+6. Marta compitiendo o montando un caballo joven.
+7. Rehabilitación: caballo en trabajo progresivo, cinta/pista/caminador o sesión guiada.
+8. Fisioterapia / osteopatía / quiropraxia: Marta trabajando manualmente con un caballo.
+9. Láser y ondas de choque en uso real.
+10. 8-12 imágenes cuadradas para la rejilla de Instagram o conexión real al feed si se implementa.
+11. Fotos opcionales para Ambassador con Pavo e Incrediwear, preferiblemente de Marta usando los productos.
+
+INFORMACIÓN PROFESIONAL
+1. Número de colegiada y colegio profesional.
+2. Nombre oficial del posgrado cursado en Reino Unido, institución, ciudad y año.
+3. Titulación/es o acreditaciones adicionales relevantes en medicina deportiva, diagnóstico por imagen, odontología, fisioterapia, osteopatía o quiropraxia.
+4. Detalle preciso de la experiencia con el equipo español: disciplina, categoría/equipo, años y competiciones representativas que se puedan mencionar públicamente.
+5. Disciplina y nivel actual de competición con caballos jóvenes.
+6. Años de experiencia profesional y, si interesa, clínicas/equipos/centros donde se ha formado o trabajado.
+7. Idiomas que puede atender además de español e inglés, si los hubiera.
+
+SERVICIOS
+1. Confirmar exactamente qué comprende el servicio de urgencias y su zona/cobertura/horario.
+2. Confirmar si realiza infiltraciones y cuáles pueden mencionarse públicamente.
+3. Confirmar si realiza bloqueos diagnósticos, endoscopia, analíticas u otras pruebas.
+4. Definir con precisión el servicio de rehabilitación: ubicación, plazas, tipo de alojamiento, manutención, frecuencia de controles, trabajo a mano/montado/caminador/pista, y si se acepta caballo externo.
+5. Definir si la fisioterapia/osteopatía/quiropraxia se ofrece como servicio independiente o siempre asociada a valoración veterinaria.
+6. Marca/modelo de ecógrafo, RX digital, láser y ondas de choque si se quiere reforzar el concepto “equipo propio”.
+7. Área habitual de desplazamiento y cómo se presupuestan desplazamientos fuera de Extremadura.
+
+PRECOMPRA
+1. Protocolo exacto de precompra: qué incluye de base y qué es opcional.
+2. Si el examen se adapta formalmente al nivel/uso: ocio, amateur, salto, doma, completo, etc.
+3. Qué series radiográficas se ofrecen y si hay protocolos estándar.
+4. Plazo normal de entrega del informe.
+5. Formato del informe: PDF, imágenes incluidas, llamada posterior, idioma ES/EN.
+6. Política para revisión de radiografías previas o exámenes remotos.
+7. Países en los que ya ha realizado precompras, si se quieren usar como prueba social.
+8. Testimonios de compradores (2-4), preferentemente internacionales, con permiso.
+
+AMBASSADOR / MARCAS
+1. Logos oficiales en buena calidad de Pavo e Incrediwear.
+2. Enlaces oficiales de las marcas o página concreta de colaboración/código si existe.
+3. Tipo exacto de colaboración con cada marca (ambassador, sponsored rider/vet, partner, etc.).
+4. Si existe código de descuento, enlace afiliado o campaña vigente.
+5. Permiso para publicar el TFG completo o, alternativamente, un resumen web/PDF.
+6. Confirmar si el trabajo de 2021 llegó a publicarse en revista, congreso o repositorio; si no, conviene denominarlo “trabajo de fin de grado / estudio preliminar”, no “estudio publicado”.
+7. Marca futura de suplementación cuando se cierre la colaboración.
+
+CONTACTO Y LEGAL
+1. Teléfono/WhatsApp real.
+2. Confirmar que hola@martacobo.vet está operativo y configurar enlace mailto.
+3. Dirección profesional solo si se desea publicar.
+4. Horario/forma preferida de contacto.
+5. Textos legales: aviso legal, privacidad y cookies si se añaden formularios, analítica o cookies no esenciales.
+6. Dominio final y, si procede, redirección desde GitHub Pages.
+7. Perfil/Google Business si existe.
+
+MATERIAL DE MARCA
+1. Wordmark o logo definitivo si existe; actualmente la web usa “MARTA COBO” tipográfico.
+2. Firma manuscrita opcional para “Sobre mí”.
+3. Favicon.
+4. Selección de 2-3 retratos y 10-15 fotos clínicas/deportivas con derechos de uso web.
+5. Criterio de créditos fotográficos.
+
+
+CAMBIOS INCORPORADOS EN ESTA REVISIÓN
+- Portada: cada mensaje principal aparece en su propio bloque/línea; no se mezclan medicina deportiva, diagnóstico y precompra.
+- Eliminadas referencias a “caballo atleta”.
+- “Odontología equina” pasa a “Odontología”.
+- “Láser terapéutico” pasa a “Terapia láser”.
+- Eliminada la expresión “terapia manual”; se usa “quiropraxia” cuando corresponde.
+- Añadido servicio INDIBA.
+- Eliminada la tercera persona al hablar de Marta: los textos de servicio son impersonales y la página Sobre mí mantiene primera persona.
+- Ambassador/Incrediwear: se elimina la explicación técnica del estudio y queda un enlace sencillo al estudio realizado.
+- Reducidos los separadores con punto medio en contenido visible.
