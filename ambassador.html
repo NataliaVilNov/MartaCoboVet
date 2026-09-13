@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ambassador &middot; Marta Cobo</title>
+<meta name="description" content="Marcas que Marta Cobo respalda como veterinaria: Pavo, Incrediwear y mas." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#17251C;--forest:#1F3A2B;--forest-deep:#152A1F;--moss:#38553F;--sage:#8AA790;
+    --bone:#EDE9DF;--paper:#F7F5EF;--ochre:#BE8A34;--ochre-soft:#D9B368;
+    --line:rgba(23,37,28,.14);--line-light:rgba(247,245,239,.18);
+    --serif:"Fraunces",Georgia,serif;--sans:"Instrument Sans",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-size:17px;line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;margin:0;letter-spacing:-.01em;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,5vw,56px);}
+
+  .top{position:sticky;top:0;z-index:50;background:rgba(247,245,239,.9);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .top-in{display:flex;align-items:center;justify-content:space-between;gap:18px;height:66px;}
+  .brand{font-family:var(--serif);font-size:20px;font-weight:500;text-decoration:none;white-space:nowrap;}
+  .brand span{color:var(--ochre);}
+  nav.main{display:flex;align-items:center;gap:24px;}
+  nav.main a{text-decoration:none;font-size:15px;color:var(--ink);opacity:.75;transition:opacity .18s,color .18s;}
+  nav.main a:hover{opacity:1;}
+  nav.main a.nav-current{opacity:1;color:var(--ochre);}
+  .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex-shrink:0;}
+  .lang button{font-family:var(--sans);font-size:13px;font-weight:500;padding:6px 12px;border:0;
+    background:transparent;color:var(--ink);cursor:pointer;opacity:.55;transition:.18s;}
+  .lang button[aria-pressed="true"]{background:var(--forest);color:var(--paper);opacity:1;}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;
+    width:40px;height:40px;font-size:20px;cursor:pointer;color:var(--ink);}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--sans);
+    font-size:15.5px;font-weight:500;text-decoration:none;padding:13px 26px;border-radius:999px;
+    border:1px solid transparent;cursor:pointer;transition:transform .15s,background .2s,color .2s,border-color .2s;}
+  .btn:active{transform:scale(.98);}
+  .btn-solid{background:var(--ochre);color:#231702;}
+  .btn-solid:hover{background:var(--ochre-soft);}
+  .btn-ghost{background:transparent;color:var(--paper);border-color:var(--line-light);}
+  .btn-ghost:hover{border-color:var(--sage);background:rgba(247,245,239,.06);}
+
+  .hero{background:var(--forest);color:var(--paper);position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(120% 90% at 85% 15%,rgba(190,138,52,.10),transparent 60%);}
+  .hero-in{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);
+    align-items:center;padding:clamp(56px,9vw,100px) 0 clamp(56px,9vw,92px);position:relative;z-index:1;}
+  .kicker{font-size:14px;color:var(--ochre-soft);margin:0 0 22px;}
+  .hero h1{font-size:clamp(2.5rem,5.6vw,4.2rem);font-weight:400;color:#fff;}
+  .hero h1 em,.page-hero h1 em{font-style:italic;font-weight:300;color:var(--ochre-soft);}
+  .hero .lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:rgba(247,245,239,.86);
+    max-width:44ch;margin:26px 0 34px;line-height:1.65;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;}
+  .hero-card{border:1px solid var(--line-light);border-radius:16px;overflow:hidden;background:var(--forest-deep);}
+  .ph{aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:10px;color:var(--sage);text-align:center;padding:24px;background:linear-gradient(160deg,#20402e,#18301f);}
+  .ph svg{width:44px;height:44px;opacity:.65;}
+  .ph small{font-size:12.5px;max-width:22ch;line-height:1.5;}
+
+  .page-hero{background:var(--forest);color:var(--paper);position:relative;overflow:hidden;}
+  .page-hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(120% 120% at 90% 10%,rgba(190,138,52,.10),transparent 60%);}
+  .page-hero-in{padding:clamp(52px,8vw,84px) 0;position:relative;z-index:1;}
+  .page-hero h1{font-size:clamp(2.1rem,4.6vw,3.4rem);color:#fff;font-weight:400;max-width:20ch;}
+  .page-hero p{color:rgba(247,245,239,.85);max-width:54ch;margin-top:18px;font-size:1.12rem;}
+
+  section{padding:clamp(58px,8vw,104px) 0;}
+  .eyebrow{font-size:14px;color:var(--ochre);margin:0 0 14px;}
+  .sec-head{max-width:56ch;margin-bottom:clamp(34px,5vw,52px);}
+  .sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);}
+  .sec-head p{color:rgba(23,37,28,.72);margin:16px 0 0;font-size:1.06rem;}
+
+  .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .hub-card{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);
+    border-radius:16px;padding:26px 28px;background:var(--bone);transition:border-color .2s,transform .15s;}
+  .hub-card:hover{border-color:var(--ochre);transform:translateY(-2px);}
+  .hub-card h3{font-family:var(--serif);font-size:1.5rem;font-weight:500;margin:0 0 8px;}
+  .hub-card p{margin:0;color:rgba(23,37,28,.72);font-size:.98rem;}
+
+  .strip{background:var(--bone);text-align:center;}
+  .strip h2{font-size:clamp(1.7rem,3.2vw,2.3rem);max-width:26ch;margin:0 auto;}
+
+  .svc-note{display:inline-block;font-size:.98rem;color:var(--forest);
+    background:rgba(31,58,43,.08);border-radius:999px;padding:9px 20px;line-height:1.5;margin-bottom:clamp(30px,5vw,44px);}
+  .svc-group{margin-top:clamp(34px,5vw,52px);}
+  .svc-group:first-of-type{margin-top:0;}
+  .svc-group > h3{font-family:var(--sans);font-size:.95rem;font-weight:600;color:var(--ochre);
+    margin:0 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line);}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,3vw,40px);}
+  .svc-item h4{font-family:var(--serif);font-size:1.3rem;font-weight:500;margin:0 0 6px;}
+  .svc-item h4 .dot{display:inline-block;width:7px;height:7px;border-radius:50%;
+    background:var(--ochre);margin-left:9px;vertical-align:middle;}
+  .svc-item p{margin:0;color:rgba(23,37,28,.72);font-size:.99rem;max-width:52ch;}
+
+  .lead-p{font-size:1.18rem;line-height:1.7;max-width:60ch;color:rgba(23,37,28,.85);}
+  .inc{display:grid;grid-template-columns:1fr 1fr;gap:16px 34px;margin:clamp(30px,5vw,44px) 0;}
+  .inc div{display:flex;gap:12px;align-items:flex-start;font-size:1.04rem;max-width:46ch;}
+  .inc svg{width:20px;height:20px;color:var(--ochre);flex-shrink:0;margin-top:4px;}
+  .note-line{color:rgba(23,37,28,.7);max-width:56ch;font-size:1.05rem;margin:0 0 clamp(26px,4vw,36px);}
+
+  .amb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .amb-card{border:1px solid var(--line);border-radius:16px;padding:28px 26px;background:var(--bone);
+    display:flex;flex-direction:column;}
+  .amb-tag{font-size:.85rem;color:var(--ochre);margin:0 0 14px;}
+  .amb-logo{font-family:var(--serif);font-size:1.7rem;font-weight:500;color:var(--forest);line-height:1;margin:0 0 16px;}
+  .amb-logo.soon{color:rgba(23,37,28,.4);}
+  .amb-card p{margin:0 0 20px;color:rgba(23,37,28,.74);font-size:.98rem;flex:1;}
+  .amb-link{font-size:.95rem;font-weight:500;color:var(--forest);text-decoration:none;
+    border-bottom:1px solid var(--ochre);padding-bottom:2px;align-self:flex-start;}
+  .amb-link:hover{color:var(--ochre);}
+  .amb-soon{font-size:.9rem;color:rgba(23,37,28,.5);align-self:flex-start;}
+  .amb-cta{margin-top:clamp(32px,5vw,48px);border-top:1px solid var(--line);padding-top:30px;
+    display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;}
+  .amb-cta p{margin:0;font-family:var(--serif);font-size:clamp(1.3rem,2.4vw,1.7rem);color:var(--ink);max-width:22ch;}
+
+  .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,64px);align-items:start;}
+  .portrait{border-radius:16px;overflow:hidden;border:1px solid var(--line);}
+  .portrait .ph{aspect-ratio:3/4;background:linear-gradient(160deg,#e3ded1,#d5cfbd);color:#8a8571;}
+  .about-body p{color:rgba(23,37,28,.82);margin:0 0 18px;max-width:60ch;}
+  .about-body .sign{font-family:var(--serif);font-size:1.3rem;color:var(--forest);}
+
+  .cov-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,60px);align-items:center;}
+  .cov-stat{border-left:2px solid var(--ochre);padding-left:20px;margin-bottom:26px;}
+  .cov-stat b{font-family:var(--serif);font-size:2.1rem;font-weight:400;display:block;line-height:1.1;}
+  .cov-stat span{color:rgba(23,37,28,.66);font-size:.98rem;}
+  .cov-map{background:var(--bone);border:1px solid var(--line);border-radius:16px;padding:30px;}
+  .cov-map h3{font-size:1.15rem;font-weight:500;font-family:var(--sans);margin-bottom:14px;}
+  .place{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:1rem;}
+  .place:first-of-type{border-top:0;}
+  .place b{font-weight:500;}.place span{color:rgba(23,37,28,.6);font-size:.92rem;margin-left:auto;}
+
+  .contact-sec{background:var(--forest-deep);color:var(--paper);}
+  .contact-sec h2{font-size:clamp(2rem,4vw,2.9rem);color:#fff;max-width:20ch;}
+  .contact-sec .lead{color:rgba(247,245,239,.82);max-width:52ch;margin:20px 0 40px;font-size:1.1rem;}
+  .ch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+  .ch{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--paper);
+    border:1px solid var(--line-light);border-radius:12px;padding:18px 20px;transition:.2s;}
+  .ch:hover{border-color:var(--ochre-soft);background:rgba(247,245,239,.04);}
+  .ch svg{width:22px;height:22px;flex-shrink:0;color:var(--ochre-soft);}
+  .ch b{display:block;font-weight:500;font-size:15px;}
+  .ch span{font-size:13px;color:rgba(247,245,239,.6);}
+
+  .cta-band{background:var(--bone);text-align:center;}
+  .cta-band h2{font-size:clamp(1.7rem,3.2vw,2.3rem);max-width:24ch;margin:0 auto 26px;}
+
+  footer{background:var(--forest-deep);color:rgba(247,245,239,.6);
+    border-top:1px solid var(--line-light);padding:30px 0;font-size:13.5px;}
+  .foot-in{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;}
+  .foot-in a{color:rgba(247,245,239,.75);text-decoration:none;}
+
+  @media(max-width:860px){
+    .hero-in{grid-template-columns:1fr;}
+    .hero-card{max-width:340px;order:-1;}
+    .about-grid{grid-template-columns:1fr;max-width:440px;}
+    .amb-grid{grid-template-columns:1fr;max-width:460px;}
+    .cov-grid{grid-template-columns:1fr;}
+    nav.main{position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;
+      background:var(--paper);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .3s ease;}
+    nav.main.open{max-height:420px;}
+    nav.main a{padding:15px clamp(20px,5vw,56px);width:100%;border-top:1px solid var(--line);opacity:.9;}
+    .menu-btn{display:inline-flex;align-items:center;justify-content:center;}
+  }
+  @media(max-width:640px){.hub-grid,.svc-grid,.inc{grid-template-columns:1fr;}}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--ochre-soft);outline-offset:3px;border-radius:4px;}
+  @media(prefers-reduced-motion:no-preference){
+    .reveal{opacity:0;transform:translateY(16px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards;}
+    .reveal.d1{animation-delay:.08s;}.reveal.d2{animation-delay:.16s;}.reveal.d3{animation-delay:.24s;}
+    @keyframes rise{to{opacity:1;transform:none;}}
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="index.html">Marta <span>Cobo</span></a>
+    <nav class="main" id="nav">
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a>
+      <a href="precompra.html" data-es="Pre-compra" data-en="Pre-purchase">Pre-compra</a>
+      <a href="ambassador.html" class="nav-current" data-es="Ambassador" data-en="Ambassador">Ambassador</a>
+      <a href="sobre-mi.html" data-es="Sobre mí" data-en="About">Sobre mí</a>
+      <a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button id="es" aria-pressed="true" onclick="setLang('es')">ES</button>
+        <button id="en" aria-pressed="false" onclick="setLang('en')">EN</button>
+      </div>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#8801;</button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="wrap page-hero-in">
+    <p class="kicker" data-es="Ambassador" data-en="Ambassador">Ambassador</p>
+    <h1 data-es="Marcas en las que conf&iacute;o" data-en="Brands I trust">Marcas en las que conf&iacute;o</h1>
+    <p data-es="Como veterinaria, solo respaldo lo que usar&iacute;a con mis propios pacientes. Colaboro con marcas que cuidan la salud y el rendimiento del caballo, y pongo sus productos a prueba antes de recomendarlos." data-en="As a vet, I only back what I&#39;d use on my own patients. I collaborate with brands that care about horses&#39; health and performance, and I test their products before recommending them.">Como veterinaria, solo respaldo lo que usar&iacute;a con mis propios pacientes. Colaboro con marcas que cuidan la salud y el rendimiento del caballo, y pongo sus productos a prueba antes de recomendarlos.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="amb-grid">
+      <div class="amb-card">
+        <p class="amb-tag" data-es="Alimentaci&oacute;n" data-en="Nutrition">Alimentaci&oacute;n</p>
+        <p class="amb-logo">Pavo</p>
+        <p data-es="Nutrici&oacute;n equina con m&aacute;s de 50 a&ntilde;os de investigaci&oacute;n. Piensos y suplementos con base cient&iacute;fica para cada etapa del caballo, del potro al alto rendimiento." data-en="Equine nutrition with over 50 years of research. Scientifically formulated feeds and supplements for every stage, from foal to high performance.">Nutrici&oacute;n equina con m&aacute;s de 50 a&ntilde;os de investigaci&oacute;n. Piensos y suplementos con base cient&iacute;fica para cada etapa del caballo, del potro al alto rendimiento.</p>
+        <a class="amb-link" href="https://www.pavo.net" target="_blank" rel="noopener" data-es="Visitar Pavo" data-en="Visit Pavo">Visitar Pavo</a>
+      </div>
+      <div class="amb-card">
+        <p class="amb-tag" data-es="Recuperaci&oacute;n" data-en="Recovery">Recuperaci&oacute;n</p>
+        <p class="amb-logo">Incrediwear</p>
+        <p data-es="Terapia sin compresi&oacute;n: sus tejidos con germanio y carbono liberan iones negativos que mejoran la circulaci&oacute;n y el drenaje linf&aacute;tico, acelerando la recuperaci&oacute;n. Realic&eacute; un estudio sobre su eficacia real, que publicar&eacute; aqu&iacute;." data-en="Non-compressive therapy: its germanium-and-carbon fabric releases negative ions that boost circulation and lymphatic drainage, speeding recovery. I carried out a study on its real effectiveness, which I&#39;ll publish here.">Terapia sin compresi&oacute;n: sus tejidos con germanio y carbono liberan iones negativos que mejoran la circulaci&oacute;n y el drenaje linf&aacute;tico, acelerando la recuperaci&oacute;n. Realic&eacute; un estudio sobre su eficacia real, que publicar&eacute; aqu&iacute;.</p>
+        <span class="amb-soon" data-es="Estudio de eficacia &middot; pr&oacute;ximamente" data-en="Effectiveness study &middot; coming soon">Estudio de eficacia &middot; pr&oacute;ximamente</span>
+      </div>
+      <div class="amb-card">
+        <p class="amb-tag" data-es="Suplementaci&oacute;n" data-en="Supplements">Suplementaci&oacute;n</p>
+        <p class="amb-logo soon" data-es="Pr&oacute;ximamente" data-en="Coming soon">Pr&oacute;ximamente</p>
+        <p data-es="Un espacio reservado para una futura colaboraci&oacute;n en suplementaci&oacute;n equina, elegida con el mismo criterio veterinario que el resto." data-en="A space reserved for a future collaboration in equine supplements, chosen with the same veterinary criteria as the rest.">Un espacio reservado para una futura colaboraci&oacute;n en suplementaci&oacute;n equina, elegida con el mismo criterio veterinario que el resto.</p>
+      </div>
+    </div>
+    <div class="amb-cta">
+      <p data-es="&iquest;Eres una marca y quieres colaborar?" data-en="Are you a brand and want to collaborate?">&iquest;Eres una marca y quieres colaborar?</p>
+      <a class="btn btn-solid" href="contacto.html" data-es="Escr&iacute;beme" data-en="Write to me">Escr&iacute;beme</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap foot-in">
+    <span>&copy; <span id="yr"></span> Marta Cobo &middot; <span data-es="Veterinaria equina" data-en="Equine veterinarian">Veterinaria equina</span></span>
+    <span data-es="Colegiada N&ordm; [a&ntilde;adir] &middot; Badajoz, Espa&ntilde;a" data-en="License No. [add] &middot; Badajoz, Spain">Colegiada N&ordm; [a&ntilde;adir] &middot; Badajoz, Espa&ntilde;a</span>
+  </div>
+</footer>
+<script>
+  var STR={es:{t:"Ambassador &middot; Marta Cobo"},en:{t:"Ambassador &middot; Marta Cobo"}};
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.title=STR[l].t;
+    document.querySelectorAll('[data-es]').forEach(function(el){
+      var v=el.getAttribute('data-'+l); if(v!==null) el.innerHTML=v;
+    });
+    document.getElementById('es').setAttribute('aria-pressed',l==='es');
+    document.getElementById('en').setAttribute('aria-pressed',l==='en');
+    try{localStorage.setItem('mc_lang',l);}catch(e){}
+    document.getElementById('nav').classList.remove('open');
+  }
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var s='es'; try{s=localStorage.getItem('mc_lang')||'es';}catch(e){}
+  setLang(s);
+  document.querySelectorAll('#nav a').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});
+  });
+</script>
+</body>
+</html>
